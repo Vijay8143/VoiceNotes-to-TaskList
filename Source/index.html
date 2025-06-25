@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-microphone"></i> Voice To-Do List</h1>
+        
+        <div class="voice-control">
+            <button id="voiceBtn" class="voice-btn">
+                <i class="fas fa-microphone"></i> Start Speaking
+            </button>
+            <div id="status" class="status">Ready</div>
+        </div>
+        
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Or type a task here...">
+            <button id="addBtn"><i class="fas fa-plus"></i> Add</button>
+        </div>
+        
+        <ul id="taskList" class="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
